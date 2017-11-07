@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/UndeGround"
+	xmlns:tns="http://www.example.org/UndeGround">
+
+	<!-- @author A.Zapotochnyy -->
+
+	<element name="UndergroundProject">
+		<complexType>
+			<sequence>
+
+				<element name="Alllines" type="tns:lines" maxOccurs="3" />
+				<element name="DepoMain" type="tns:depo" />
+
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="lines">
+		<sequence>
+			<element name="lineName" type="string" />
+			<element name="StationList" type="tns:stationlist" maxOccurs="30" />
+			<element name="Direction" type="string" />
+			<element name="TrainList" type="tns:alltrains" maxOccurs="10" />
+		</sequence>
+	</complexType>
+
+
+	<complexType name="depo">
+		<sequence>
+			<element name="DepoName" type="string" />
+			<element name="Depocars" type="tns:allCars" maxOccurs="100" />
+		</sequence>
+	</complexType>
+
+
+	<complexType name="stationlist">
+		<sequence>
+
+			<element name="StationName" type="string" />
+			<element name="TransitStation" type="tns:transitStationOrNot" />
+			<element name="PassOnStation" type="tns:allpassengers"
+				maxOccurs="100" />
+
+		</sequence>
+	</complexType>
+
+	<complexType name="allpassengers">
+		<sequence>
+
+			<element name="gender" type="tns:mailFemale" />
+			<element name="age" type="tns:passAge" />
+
+		</sequence>
+	</complexType>
+
+	<simpleType name="mailFemale">
+		<restriction base="string">
+			<pattern value="male|female" />
+		</restriction>
+	</simpleType>
+
+
+	<simpleType name="passAge">
+		<restriction base="integer">
+			<minInclusive value="1"></minInclusive>
+			<maxExclusive value="120"></maxExclusive>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="transitStationOrNot">
+		<restriction base="string">
+			<pattern value="yes|no" />
+		</restriction>
+	</simpleType>
+
+	<complexType name="alltrains">
+		<sequence>
+			<element name="TrainName" type="string" />
+			<element name="TrainCars" type="tns:allCars" maxOccurs="5" />
+			<element name="Driver" type="tns:drivers" minOccurs="0"
+				maxOccurs="20" />
+
+
+		</sequence>
+	</complexType>
+
+	<complexType name="drivers">
+		<sequence>
+			<element name="DriverName" type="string" />
+			<element name="Age" type="tns:driverAge" />
+			<element name="Experience" type="tns:driverExperience" />
+		</sequence>
+	</complexType>
+
+
+	<simpleType name="driverAge">
+		<restriction base="integer">
+			<minInclusive value="20" />
+			<maxExclusive value="65" />
+		</restriction>
+	</simpleType>
+
+
+	<simpleType name="driverExperience">
+		<restriction base="integer">
+			<minInclusive value="0" />
+			<maxExclusive value="45" />
+		</restriction>
+	</simpleType>
+
+
+	<complexType name="allCars">
+		<sequence>
+			<element name="CarName" type="string" />
+			<element name="Doors" type="tns:intDoors" />
+			<element name="Window" type="tns:intWindows" />
+			<element name="Seat" type="tns:intSeats" />
+			<element name="Cabin" type="tns:CarOrCarMain" />
+			<element name="PassInCars" type="tns:allpassengers"
+				minOccurs="0" maxOccurs="30" />
+		</sequence>
+	</complexType>
+
+
+	<simpleType name="CarOrCarMain">
+		<restriction base="string">
+			<pattern value="yes|no" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="intDoors">
+		<restriction base="integer">
+			<minInclusive value="28" />
+			<maxInclusive value="30" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="intWindows">
+		<restriction base="integer">
+			<minInclusive value="30" />
+			<maxInclusive value="38" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="intSeats">
+		<restriction base="integer">
+			<minInclusive value="10" />
+			<maxInclusive value="24" />
+		</restriction>
+	</simpleType>
+
+
+
+</schema>

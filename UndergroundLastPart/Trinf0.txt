@@ -1,0 +1,9 @@
+ Hundaj
+[Drivername=Petja, age=45]
+[The train consists of:
+[CarMain [cabin=true][[name=Krjukovskij][body=Body]truck=8][doors=4][window=10][seat=20]]
+, Car [name=Krjukovskij][body=Body][truck=8][doors=8][window=12][seat=36]
+, Car [name=Krjukovskij][body=Body][truck=8][doors=8][window=12][seat=36]
+, Car [name=Krjukovskij][body=Body][truck=8][doors=8][window=12][seat=36]
+, CarMain [cabin=true][[name=Krjukovskij][body=Body]truck=8][doors=4][window=10][seat=20]]
+]]

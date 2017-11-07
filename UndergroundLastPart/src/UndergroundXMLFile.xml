@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:UndergroundProject xmlns:tns="http://www.example.org/UndeGround"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/UndeGround UnderGround.xsd">
+
+	<!-- @author A.Zapotochnyy -->
+
+	<Alllines>
+
+		<lineName>RED</lineName>
+
+		<StationList>
+			<StationName>Ploshcha lva tolstogo</StationName>
+			<TransitStation>yes</TransitStation>
+			<PassOnStation>
+				<gender>male</gender>
+				<age>25</age>
+			</PassOnStation>
+		</StationList>
+
+		<Direction>FromTheEarthToTheMoon</Direction>
+
+		<TrainList>
+			<TrainName>Hundaj</TrainName>
+			<TrainCars>
+				<CarName>Fujitsu1</CarName>
+				<Doors>28</Doors>
+				<Window>30</Window>
+				<Seat>20</Seat>
+				<Cabin>yes</Cabin>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>18</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>37</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>45</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>89</age>
+				</PassInCars>
+
+			</TrainCars>
+
+
+			<TrainCars>
+				<CarName>Fujitsu2</CarName>
+				<Doors>28</Doors>
+				<Window>30</Window>
+				<Seat>20</Seat>
+				<Cabin>no</Cabin>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>18</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>37</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>45</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>89</age>
+				</PassInCars>
+
+			</TrainCars>
+			<TrainCars>
+				<CarName>Fujitsu3</CarName>
+				<Doors>28</Doors>
+				<Window>30</Window>
+				<Seat>20</Seat>
+				<Cabin>no</Cabin>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>18</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>37</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>45</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>89</age>
+				</PassInCars>
+
+			</TrainCars>
+			<TrainCars>
+				<CarName>Fujitsu4</CarName>
+				<Doors>28</Doors>
+				<Window>30</Window>
+				<Seat>20</Seat>
+				<Cabin>no</Cabin>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>18</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>37</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>45</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>89</age>
+				</PassInCars>
+
+			</TrainCars>
+			<TrainCars>
+				<CarName>Fujitsu5</CarName>
+				<Doors>28</Doors>
+				<Window>30</Window>
+				<Seat>20</Seat>
+				<Cabin>yes</Cabin>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>13</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>30</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>male</gender>
+					<age>43</age>
+				</PassInCars>
+
+				<PassInCars>
+					<gender>female</gender>
+					<age>100</age>
+				</PassInCars>
+
+			</TrainCars>
+			<Driver>
+				<DriverName>Pedro</DriverName>
+				<Age>30</Age>
+				<Experience>5</Experience>
+			</Driver>
+		</TrainList>
+
+	</Alllines>
+	<DepoMain>
+		<DepoName>Lukjanovka</DepoName>
+		<Depocars>
+			<CarName>Fujitsu1</CarName>
+			<Doors>28</Doors>
+			<Window>30</Window>
+			<Seat>20</Seat>
+			<Cabin>yes</Cabin>
+		</Depocars>
+		<Depocars>
+			<CarName>Fujitsu2</CarName>
+			<Doors>28</Doors>
+			<Window>30</Window>
+			<Seat>20</Seat>
+			<Cabin>yes</Cabin>
+		</Depocars>
+
+		<Depocars>
+			<CarName>Fujitsu2</CarName>
+			<Doors>28</Doors>
+			<Window>30</Window>
+			<Seat>20</Seat>
+			<Cabin>no</Cabin>
+		</Depocars>
+		<Depocars>
+			<CarName>Fujitsu3</CarName>
+			<Doors>28</Doors>
+			<Window>30</Window>
+			<Seat>20</Seat>
+			<Cabin>no</Cabin>
+		</Depocars>
+		<Depocars>
+			<CarName>Fujitsu3</CarName>
+			<Doors>28</Doors>
+			<Window>30</Window>
+			<Seat>20</Seat>
+			<Cabin>no</Cabin>
+		</Depocars>
+		<Depocars>
+			<CarName>Fujitsu4</CarName>
+			<Doors>28</Doors>
+			<Window>30</Window>
+			<Seat>20</Seat>
+			<Cabin>no</Cabin>
+		</Depocars>
+		<Depocars>
+			<CarName>Fujitsu5</CarName>
+			<Doors>28</Doors>
+			<Window>30</Window>
+			<Seat>20</Seat>
+			<Cabin>yes</Cabin>
+		</Depocars>
+
+
+	</DepoMain>
+
+</tns:UndergroundProject>
+
